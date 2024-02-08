@@ -1,0 +1,54 @@
+<!-- 기본 구조를 제작하세요. -->
+<!-- emmet 축약형 코드 : 코드 단축키 !클릭하면 html 기본구조 자동완성 -->
+
+<!-- html5를 사용한다 -->
+<!DOCTYPE html>
+
+<!-- dir 값을 ltr로 지정하는 경우 왼쪽에서 오른쪽으로 글이 나열됨. -->
+<html lang="ko">
+    <head>
+        <!-- 한글 등 각나라의 언어를 깨지지 않게 하는 charset(문자셋) -->
+        <meta charset="UTF-8">
+
+        <!-- 장비에 적합하게 표시하라, 반응형 페이지 제작할 때 무조건 있어야함., initial-scale : 배율 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 
+            - 문단 : h1 ~ h6, p 
+            - 글자 태그 : span, b, i, u -> 줄바꿈하지 않음., 독립적으로 사용불가
+        -->
+        <p>
+            <b>진하고 굵게</b><br/>
+            <!-- 구글에서 더 검색을 잘함. -->
+            <strong>강조의 의미를 가지고 있는 굵은 글씨 태그</strong><br/>
+            <u>밑줄</u><br/>
+            <ins>강조의 의미를 가지는 밑줄</ins><br/>
+            <i>기울임 체</i><br/>
+            <em>강조의 의미를 가지는 기울임 체</em><br/>
+            <mark>한글은 형광색</mark> 아름다운 글입니다. <br />
+            <ruby>아름다운<rt>글입니다.</rt></ruby>
+            <ruby>李主榮<rt>이주영</rt></ruby>
+            <span style="font-size: 34px">글입니다.</span>
+        </p>
+
+        <div>
+            <!-- block형 속성의 태그, 다른 block형 태그 포함 가능, inline -->
+            <h1>제목</h1>
+            <p>block 속성</p>
+            윗첨자 :  4<sup>2</sup>
+            아랫첨자 : x<sub>3</sub>
+            
+            <!-- tooltip : 타이틀에 쓴 값을 툴팁으로 나타낸다. -->
+            <abbr title="Hyper Text Markup Language">HTML</abbr>
+            <cite>http://www.naver.com</cite>
+            
+            <!-- &lt; : <, &gt; : > -->
+            <code> &lt;html &gt; </code>
+            <code>
+                const js = document.querySelect
+            </code>
+        </div>
+    </body>
+</html>
