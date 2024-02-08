@@ -9,4 +9,4 @@
 
 2. 참조 사이트 : https://web.dominos.co.kr/main
 
-3. 페이지(UI기획 URL) : https://ovenapp.io/project/20vQV8jsdvsMwqfjoSt5E6k0QD2qJTbg#oqwOm(아직 미완성 입니다^^)
+3. 페이지(UI기획 URL) : https://ovenapp.io/project/20vQV8jsdvsMwqfjoSt5E6k0QD2qJTbg#oqwOm (아직 미완성 입니다^^)
