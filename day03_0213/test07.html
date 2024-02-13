@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table{
+                border: 1px solid black;
+                width: 700px;
+                height: 500px;
+            }
+            td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            웹적합성을 고려하여 웹 브라우저 상에선 table 바로 하위 자식 속성에 tbody가 있음. 
+        -->
+       <table>
+            <tr>
+                <!-- 
+                    colspan : 가로 1칸의 
+                    역할을 여러칸으로 나타냄 
+                    rowspan : 세로 1칸의 역할을 세로 여러칸으로 나타냄.
+                -->
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td  rowspan="5">1</td>
+                <td rowspan="5"></td>
+                <td></td>
+                <td></td>
+                <td rowspan="5"></td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+       </table>
+        <!--
+            browser : html, css parsing(번역), js 번역(v8엔진-> 크롬의 경우 그렇고 다른 브라우저에선 다른걸 사용하고 있음.)
+            node.js : 번역(v8엔진)
+            인공지능 : 자동으로 처리
+
+            devtool(debug 창) : F12
+            element : 요소, html입장에선 tag, node 입장에선 node
+          -->
+    </body>
+</html>
