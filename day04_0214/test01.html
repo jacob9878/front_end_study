@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            td {
+               text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+
+            테이블 내 제목을 나타내는 것 -> thead
+            테이블 내 내용을 처리하는 것 -> tfoot
+            table>thead+tbody+tfoot
+            table>thead>tr*2>th*6^^tbody>tr*4>td*5^^tfoot>tr>th+td*5
+
+            > 자식(자식)
+            + 형제(동레벨)
+            ^ 부모(상위레벨)
+            () 그룹으로 묶음.
+
+            scope="col" : 가로(column)의 제목
+            scope="row" : 세로(row)의 제목
+        -->
+        <table border="1" width: 1200;>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="row">차종</th>
+                    <th rowspan="2" scope="row">표준대여요금</th>
+                    <th colspan="4">대연기간별 일일요금</th>
+                    <!-- <th></th>
+                    <th></th>
+                    <th></th> -->
+                </tr>
+                <tr>
+                    <!-- <th></th> -->
+                    <!-- <th></th> -->
+                    <th scope="row">1일</th>
+                    <th scope="row">3일</th>
+                    <th scope="row">5일</th>
+                    <th scope="row">7일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">스파크/모닝</th>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                </tr>
+                <tr>
+                    <th scope="col">레이/엑센트</th>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                </tr>
+                <tr>
+                    <th scope="col">더뉴K3/아반떼MD</th>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                </tr>
+                <tr>
+                    <th scope="col">올뉴K3/아반떼AD</th>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                    <td>50,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col">합계</th>
+                    <td colspan="5">555,000,000</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+            </tfoot>
+        </table>
+        <!-- 
+            코드 선택해서 alt누른 후 방향키 누르면 누른 방향으로 코드 이동됨. 
+            thead, tbody, tfoot은 코딩한 순서와 관계 없이 thead, tbody, tfoot순서로 나옴.  -> 웹접근성 고려      
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <td>data1</td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>data3</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>data2</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 
+            모양은 테이블이지만 테이블 태그를 사용하지 않고 div 등을 사용할 수 있다.
+            반응형 페이지 때문에 제작
+
+            웹접근성에 적합하게 만들기 : 법으로 정해져 있음.
+         -->
+        
+    </body>
+</html>

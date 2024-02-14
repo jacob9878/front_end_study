@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table{
+                background-color: cornflowerblue;
+            }
+            thead {
+                background-color: navy;
+                color: white;
+            }
+            td {
+                background-color: aliceblue;
+            }
+            tfoot {
+                background-color: deepskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- <h2>TV편성표보기 <img src="./img/images.jpg" width="50"/></h2> -->
+            <table>
+                <tr>
+                    <td>TV편성표보기</td>
+                    <td><img src="./img/images.jpg" width="50"/></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>2012년 12월 17일(월) TV 영화 편성표</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="row"></th>
+                        <th scope="row">OCN</th>
+                        <th scope="row">SUPER ACTION</th>
+                        <th scope="row">채널 CGV</th>
+                        <th scope="row">XTM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">19시</th>
+                        <td rowspan="2">의뢰인</td>
+                        <td>CSI MIAMI 시즌2(11회)</td>
+                        <td>지구가 멈추는 날</td>
+                        <td>Friends(20회)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">20시</th>
+                        <!-- <td></td> -->
+                        <td>미트더 스파르탄</td>
+                        <td rowspan="3">공감랭크쇼</td>
+                        <td>Friends(21회)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">21시</th>
+                        <td>CSI시즌2(12회)</td>
+                        <!-- <td></td> -->
+                        <td rowspan="3">스위드피쉬</td>
+                        <td>가제트(81회)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">22시</th>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td>CSI시즌2(13회)</td>
+                        <td>가제트(82회)</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">23시</th>
+                        <!-- <td></td> -->
+                        <td>더 록</td>
+                        <td>탑기어</td>
+                        <td>가제트(83회)</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" style="text-align:center; color:darkgray;">
+                            <i>일간단위로 업데이트 되며, 방송사 사정에따라 변경될 수 있습니다.</i>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
