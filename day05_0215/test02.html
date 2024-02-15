@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* 여러개의 요소를 같이 style설정 할 수 있음, 집합 선택자 */
+            h1, h2 {
+                font-size: 32px;
+            }
+            h1:nth-child(1){
+                background-color: aquamarine;
+            }
+            h2:nth-child(2){
+                background-color: blue;
+            }
+
+            /* :은 가상선택자라해서 선택값이 변경될 수 있음. */
+            /* h1중에 2번째라는 뜻 */
+            h1:nth-of-type(2){
+                color:red;
+            }
+            h2:nth-of-type(2){
+                color:blue;
+            }
+            h1:last-of-type{
+                color: red;
+            }
+            h2:last-child {
+                color: brown;
+                text-decoration: overline;
+            }
+            h2:last-of-type{
+                background-color: pink;
+            }
+            p:first-of-type{
+                color : green;
+            }
+            p:last-of-type{
+                background-color: red;
+            }
+
+            p:nth-of-type(1){
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>HTML html 1234 한글</h1>
+            <h2>HTML html 1234 한글</h2>
+            <h1>HTML html 1234 한글</h1>
+            <h2>HTML html 1234 한글</h2>
+            <h1>HTML html 1234 한글</h1>
+            <p>HTML html 1234 한글</p>
+            <h2>HTML html 1234 한글</h2>
+            <h1>HTML html 1234 한글</h1>
+            <h2>HTML html 1234 한글</h2>
+            <h1>HTML html 1234 한글</h1>
+            <h2>HTML html 1234 한글</h2>
+        </div>
+    </body>
+</html>

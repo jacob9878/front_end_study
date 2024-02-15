@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: "Dongle", sans-serif;
+                color: #565454;
+            }
+            h3{
+                font-size: 14px;
+            }
+            h3 > span:nth-child(1){
+                color: darkorange;
+            }
+            h3 > span:nth-child(2){
+                color: gainsboro;
+            }
+            img{
+                /* width: 60px; */
+            }
+            .blueFont{
+                color: blue;
+            }
+
+            /* 클래스명은 여러번 반복해서 사용할 수 있음. */
+            .blueFont>span:nth-of-type(1){
+                color: #565454;
+            }
+            .italic {
+                font-style: italic;
+            }
+            div{
+                width:700px;
+                /* 줄간격(행간) : 단위 없이 기본 폰트 크기를 기준으로 숫자로 지정, 2인경우 기본 글자 크기의 2배 */
+                line-height: 2;
+            }
+            #alignRight{
+                /* text-align은 블록형 속성의 태그에서만 사용가능 */
+                text-align: right;
+            }
+            #letterSpace{
+                /* 
+                    letter-spacing(자간) : 글씨와 글씨 사이의 간격(음수 값도 사용 가능)
+                    word-spacing : 단어 사이 간격
+                */
+                letter-spacing: 0.5px; 
+                word-spacing: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>
+            <span>Special</span> 
+            <span>|</span> 
+            <span>Who's DEAN; Indigo Child</span>
+        </h3>
+        <br/><br/>
+        <div>
+            "인디고 차일드" DEAN. 21살의 어린 나이에 EXO, VIXX 등 국내 아티스트들의 앨범에 작곡/작사가로 참여하며 먼저 작곡가로서 입지를 굳혔고, 이후 미국과 한국을 오가며 프로듀서로 활동했다. 에릭 벨린저(Eric Bellinger), 밀라 제이(Mila J), DJ 에스타(esta.) 등 유명 아티스트들과 작업한 곡들을 공개하며 미국에서 먼저 화제를 모았다. 2015년 유니버설 뮤직과 계약을 체결, US데뷔 싱글 I'm Not Sorry(feat, Eric Bellinger)'가 미국과 영국에서 먼저 발매되었다. 
+        </div>
+        <br/>
+
+        <div>
+            <h4>#. 인디고 차일드?</h4>
+            <br/>
+            <p>
+                인류문명의 발전을 위해 외계에서 보내진 아이들이라 믿어지는 인물들을 일컫는 말로, 주로 음악/미술 등 예술 분야에 특별한 재능을 가진 경우가 많다고 알려져 있다.
+            </p>
+        </div>
+        <br/>
+
+        <div id="letterSpace">
+            <!-- 
+                class 이름 규칙 : 두단어가 있으면 두번째단어 첫글자는 대문자 
+            -->
+            <h4 class="blueFont">Indigo child(<span class="italic">plural</span> Indigo children)</h4>
+            1. (<span class="italic">New Age</span>) A <span class="blueFont">child</span> believed to be a next stage in human evolution; to have <span class="blueFont">paranormal</span> abilities like <span class="blueFont">telepathy;</span> and/or to be more <span class="blueFont">empathic, independent,</span> and <span class="blueFont">creative</span> than its <span class="blueFont">peers</span>.
+        </div>
+        <br/><br/><br/>
+
+        <div id="alignRight">자료제공 : 유니버설뮤직 | 구성 : 네이버 뮤직</div>
+        <br/>
+
+        <div>
+            <h3>
+                <span>Album</span> 
+                <span>|</span> 
+                <span>디지털 싱글 'I'm Not Sorry'</span>
+            </h3>
+            <!-- table>tbody>tr>td*2 -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="./images/ex1_text.png"/></td>
+                        <td>
+                            <p>
+                                DEAN의 US데뷔싱글. 근래 한국에서도 많이 회자되고 있는 에릭 벨린저(Eric Bellinger)가 참여한 곡으로, 7월 10일 미국과 영국에서 먼저 발매되어 'This is50.com'과 'Allhiphop.COM' 등의 매체에 소개되며 호평 받았다.
+                            </p>
+                            <br/><br/><br/><br/><br/><br/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 
+            rgb color 
+            빛의 삼원색
+            red green blue( 0~255  0~255 0~255 )
+            
+            256가지 => 16진수 
+            1 2 3 4 5 6 7 8 9 10(a) 11(b) 12(c) 13(d) 14(e) 15(f)
+            #FF0000 red
+            #00FF00 green
+            #0000FF blue
+            #FFFFFF white
+            #000000 black
+            #FF00FF 보라색
+
+            두글자가 같은경우엔 3글자로 표현 가능
+
+        -->
+    
+    </body>
+</html>
