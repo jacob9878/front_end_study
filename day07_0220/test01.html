@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* reset */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                text-decoration: none;
+                color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+            a{
+                text-decoration: none;
+                /* 부모의 색을 따라한다. */
+                color : inherit;
+            }
+            li{
+                list-style-type: none;
+            }
+            ul>li{
+                font-size: 32px;
+                color : #333;
+            }
+            li:nth-child(1){
+                /* 색상, 두께, 스타일 */
+                border-width: 10px;
+                border-style: solid;
+                border-color: orange;
+            }
+            li:nth-child(2){
+                border: 10px solid orange;
+                border-left-width: 1px;
+                border-bottom-width: 1px;
+            }
+            li:nth-child(3){
+                border: 10px solid orange;
+                border-left-color: red;
+                border-bottom-color: red;
+            }
+             /* 
+                연속해서 얘기 할 것임
+            */
+            li:nth-child(4){
+                border: 10px dotted red;
+            }
+            li:nth-child(5){
+                border: 10px dashed red;
+            }
+            li:nth-child(6){
+                border : 2px double red;
+            }
+            li:nth-child(7){
+                border : 3px double red;
+            }
+            /* 입체선은 선색도 중요, 밝은 색을 사용해야함. */
+            li:nth-child(8){
+                border : 5px groove skyblue;
+            }
+            li:nth-child(9){
+                border : 5px ridge skyblue;
+            }
+
+
+            li:nth-child(10){
+                border : 5px inset skyblue;
+            }
+            li:nth-child(11){
+                border : 5px outset skyblue;
+            }
+            li:nth-child(12){
+                border : 5px solid skyblue;
+                border-top-color: blue;
+                border-bottom-color: red;
+            }
+            /* 도형 : 삼각형 */
+            li:nth-child(13){
+                border : 20px solid skyblue;
+                border-top-color: blue;
+                border-bottom-color: red;
+                width: 0;
+                height: 0;
+                font-size: 0;
+            }
+            li:nth-child(14){
+                border : 20px solid skyblue;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-left-color: transparent;
+                border-bottom-color: red;
+                width: 0;
+                height: 0;
+                font-size: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">한글은 아름다운 글입니다.</a></li>
+            <li><a href="#">13</a></li>
+            <li><a href="#">14</a></li>
+        </ul>
+    </body>
+</html>

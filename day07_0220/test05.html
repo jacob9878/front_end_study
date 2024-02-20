@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="../css/reset.css" rel="stylesheet"/>    
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+        <style>
+            .inner{
+                width: 350px;
+                height: 140px;
+                font-size: 18px;
+                font-weight: 800;
+                border-collapse: collapse;
+                border-top :2px solid gray;
+                /* border-top-color: transparent; */
+            }
+            .inner td{
+                border: 1px solid gray;
+                border-top-width: 0;
+                border-right-width: 0; 
+                border-left-width: 0; 
+            }
+            .inner td:first-child{
+                background-color: lightgray;
+                text-align: center;
+            }
+            .inner td:last-child{
+                padding-right: 1em;
+                text-align: right;
+            }
+        </style>
+        <style>
+            .outer{
+                /* border: 1px solid black; */
+                /* 계산식으로 사용할 수 있으나 연산자 좌우로 띄어쓰기를 사용해야함. */
+                width: calc(350px * 2);
+                height: calc(140px * 4);
+                margin: 50px auto;
+            }
+                /* 
+                    선택자 우선순위 
+                    아이디 100
+                    클래스 10
+                    태그 1
+                    가상선택자(ex: first-child같은거) 0.5
+
+                    .inner td = 10 + 1 = 11
+                    우선순위가 같으면 아래 코드를 적용
+                */
+                /* border : 1px solid black; */
+
+            .outer>tbody>tr:first-child{
+                height: 50px;
+                text-align: center;
+                background-color: black;
+                color : white;
+            }
+            img{
+                /* 웹에 업로드되는 이미지 파일 확장자 : png, svg, jpg, gif, webp */
+                /* 그림판 : bmp */
+            }
+
+            /* 속성 선택자 */
+            td[colspan="2"]{
+                font-size: 24px;
+            }
+            td[colspan="2"] i{
+                color: red;
+            }
+            .outer img{
+                width: 350px;
+            }
+            h4,h5{
+                font-size: 16px;
+            }
+            
+        </style>
+        <!-- 
+            기본 글자단위
+            rem, em, ex
+            rem : root 대문자 M 크기에 비례적용(2면 2배)
+            em : 현재 적용된 대문자 M 크기
+            ex : 소문자 x 크기의 비율
+         -->
+    </head>
+    <body>
+        <!-- table .outer>tr*3>td*2 -->
+        <table class="outer">
+            <tr>
+                <td colspan="2">
+                    <i class="bx bxs-down-arrow"></i>
+                    <!-- <img src="./images/bxs-down-arrow.svg" alt=""/> -->
+                    <span>상담 신청 바로가기</span>
+                    <i class="bx bxs-down-arrow"></i>
+                    <!-- <img src="./images/down-arrow-solid-24.png" alt=""/> -->
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>    
+                    <img src="https://www.hyundai.com/contents/mainbanner/w_Main-KV_Car_Ioniq6.png" alt="">
+                </td>
+                <td>
+                     <!-- table insert -->
+                     <h4>2024 The new IONIQ</h4>
+                     <h5>날개를 달다</h5>
+                     <table class="inner">
+                        <tbody>
+                            <tr>
+                                <td>차량가격</td>
+                                <td>24,400,000원</td>
+                            </tr>
+                            <tr>
+                                <td>초기납입금</td>
+                                <td>7,320,000원</td>
+                            </tr>
+                            <tr>
+                                <td>월렌탈료</td>,
+                                <td>342,121원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- table end -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://www.hyundai.com/contents/mainbanner/ioniq5-n-23lc_w.png"/>
+                </td>
+                <td> 
+                    <h4>2024 The new IONIQ</h4>
+                    <h5>날개를 달다</h5>
+                    <table class="inner">
+                    <tbody>
+                        <tr>
+                            <td>차량가격</td>
+                            <td>24,400,000원</td>
+                        </tr>
+                        <tr>
+                            <td>초기납입금</td>
+                            <td>7,320,000원</td>
+                        </tr>
+                        <tr>
+                            <td>월렌탈료</td>,
+                            <td>342,121원</td>
+                        </tr>
+                    </tbody>
+                </table></td>
+            </tr>
+        </table>
+    </body>
+</html>
